@@ -3,7 +3,7 @@ FROM golang:1.18 AS build
 
 # Updates the repository and installs git
 # RUN apk update && apk upgrade && apk add --no-cache git
-RUN apt-get update && apt-get upgrade && apt-get add --no-cache git
+RUN apt-get update && apt-get upgrade
 
 # Switches to /tmp/app as the working directory, similar to 'cd'
 WORKDIR /tmp/app
